@@ -1,0 +1,27 @@
+<!-- Desarrolla una aplicación web para gestionar materiales reciclables y los centros de reciclaje que los reciben. La aplicación debe permitir a los usuarios agregar detalles sobre los materiales reciclables y los centros de reciclaje. Cada material reciclable debe estar asociado a un único centro de reciclaje mediante composición, indicando que cada material reciclable puede ser gestionado por un centro específico. La interfaz debe incluir campos para ingresar el nombre del material reciclable, el nombre del centro de reciclaje, y un botón para mostrar los detalles del material reciclable y el centro de reciclaje al que está asociado. Utiliza dos archivos: reciclaje.html para la interfaz y reciclaje.js para la lógica, utilizando las clases MaterialReciclable y CentroReciclaje. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Reciclaje</title>
+    <script type="module" src="./reciclaje.js" defer ></script>
+</head>
+<body>
+    <label for="nombreMaterial">
+        <h1>Nombre del material reciclable:</h1></label>
+    <input type="text" id="nombreMaterial">
+    <label for="detallesMaterial"><h2>Detalles:</h2></label>
+    <input type="text" id="detallesMaterial">
+    <label for="nombreCentro"><h1>Nombre del centro de reciclaje:</h1></label>
+    <input type="text" id="nombreCentro">
+    <br>
+    <br>
+    <hr>
+    <button id="mostrarDetalles">Mostrar detalles</button>
+    <ul id="lista"></ul>
+    <p id="respuesta"></p>
+    
+</body>
+</html>
